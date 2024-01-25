@@ -1,0 +1,53 @@
+.front {
+    transform: perspective(600px) rotateY(0deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+
+    .front_top {
+        display: flex;
+        justify-content: space-between;
+
+        .front_top--left {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            h2 {
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 16px;
+                opacity: 54%;
+            }
+
+            h1 {
+                font-size: 28px;
+                font-weight: 500;
+                line-height: 32.81px;
+            }
+        }
+
+        .front_top--right {
+            img {
+                transform: translateY(-5px);
+            }
+        }
+    }
+
+    .front_bottom {
+        display: flex;
+        justify-content: space-between;
+
+        h3 {
+            opacity: 90%;
+            font-size: 14px;
+            line-height: 16.41px;
+            font-weight: 500;
+        }
+    }
+}
+
+.front.rotate {
+    transform: perspective(600px) rotateY(-180deg);
+}
